@@ -6,10 +6,3 @@ spring:
     client:
       service-url:
         defaultZone: http://localhost:8761/eureka
-  sql:
-    init:
-      data-locations: classpath:catalog.sql
-  jpa:
-    defer-datasource-initialization: true
-    hibernate:
-      ddl-auto: create-drop
