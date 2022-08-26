@@ -1,11 +1,7 @@
 server:
   port: 8080
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-spring:  
+  
+spring:
   cloud:
     gateway:
       routes:
@@ -16,4 +12,8 @@ spring:
         - id: catalogRoute #Identificando la ruta del service de producto
           uri: http://localhost:8084/ #URL donde se hará el redirect segun el predicate definido
           predicates: #RReglas de análisis de una request
-            - Path=/catalog/**
+            - Path=/catalogs/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
