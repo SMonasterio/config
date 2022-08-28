@@ -22,4 +22,4 @@ spring:
 info:
   app:
     name: movie-service
-    description: Gateway service application for backend specialization exam.
+    description: Movie service application for backend specialization exam.
