@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8082
 
 spring:
   eureka:
@@ -18,3 +18,8 @@ spring:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
+
+info:
+  app:
+    name: movie-service
+    description: Gateway service application for backend specialization exam.
