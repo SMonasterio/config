@@ -13,3 +13,8 @@ spring:
           uri: http://localhost:8084/
           predicates: 
             - Path=/catalogs/**
+
+info:
+  app:
+    name: movie-service
+    description: Movie service application for backend specialization exam.
